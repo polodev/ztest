@@ -21,13 +21,12 @@ $(window).scroll(function (event) {
     console.log('sidebar_nav_content_height', sidebar_nav_content_height)
     console.log('windowHeight', windowHeight)
     console.log('st', st);
-    console.log('footer offset', $('footer').offset())
+    var footer_offset = $('footer').offset() - windowHeight;
+    console.log('footer offset', )
     if (st < stableHeight  ) {
       $svc.css('top', -st);
-    } else if (st > main_content_height) {
-      $svc.css('top', -st);
-    } else if (st < main_content_height) {
-      $svc.css('top', -stableHeight);
     }
-
+    // if (st > main_content_height) {
+    //   $svc.css('top', -st);
+    // }
 });

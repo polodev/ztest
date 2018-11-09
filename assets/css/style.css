@@ -442,6 +442,10 @@ body {
   font-size: 16px;
 }
 
+button {
+  cursor: pointer;
+}
+
 #main {
   padding-top: 115px;
 }
