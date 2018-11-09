@@ -1,0 +1,96 @@
+header {
+	height: 115px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	.header_left {
+		width: 200px;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.logo {
+
+		}
+	}
+	.header_right {
+		font-size: .75rem;
+		width: 200px;
+		height: 100%;
+		.header_right_content {
+			width: 100%;
+			height: 100%;
+			padding-top: 30px;
+			.hrc_middle {
+				display: flex;
+				align-self: center;
+				ul {
+					display: flex;
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					li {
+						padding: 10px;
+						display: flex;
+						a {
+							display: inline-block;
+							text-decoration: none;
+							color: black;
+						}
+						.input_box_wrapper {
+							position: relative;
+							i {
+								cursor: pointer;
+								display: block;
+							}
+							.input_box {
+								border: 1px solid #eee;
+								box-shadow: 0 1px 6px rgba(0,0,0,.03);
+								position: absolute;
+								width: 380px;
+								left: -380px;
+								height: 40px;
+								padding: 5px;
+								display: none;
+								&.active {
+									display: block;
+								}
+								input {
+									width: 300px;
+									padding: 6px 10px;
+									outline: none;
+									border: none;
+									&:focus {
+										outline: none;
+										border: none;
+									}
+								}
+								button {
+									padding: 6px 10px;
+									background: black;
+									outline: none;
+									border: none;
+									color: white;
+									text-transform: uppercase;
+								}
+							}
+						}
+					}
+				}
+			}
+			.hrc_bottom{
+				display: flex;
+				align-self: flex-end;
+				span {
+					display: inline-block;
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+
+}
