@@ -30,11 +30,33 @@
         a {
           color: #999;
           font-size: .75rem;
+          transition:  all .2s;
+          text-decoration: none;
+          display: inline-block;
+          position: relative;
+          &.selected {
+            color: #000;
+            &:before {
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              content: "\f105";
+              font-size: 12px;
+              display: inline-block;
+              position: absolute;
+              left: -10px;
+              color: #000;
+            }
+
+          }
+          &:hover {
+            color: #000;
+          }
         }
       }
     }
   }
   .filter_buttons {
+    text-align: left;
     .filter_buttons_bottom_left {
 
     }
@@ -43,3 +65,4 @@
     }
   }
 }
+

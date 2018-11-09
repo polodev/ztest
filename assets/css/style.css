@@ -14,6 +14,29 @@ body {
   padding-top: 115px;
 }
 
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.btn1 {
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background-color: transparent;
+  color: #000;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  padding: 3px 10px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #ffffff;
+  margin-left: 15px;
+  border: 1px solid #777;
+}
+
 header {
   height: 115px;
   position: fixed;
@@ -221,5 +244,33 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
 .filter_box .filter_column_wrapper .filter_column li a {
   color: #999;
   font-size: .75rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.filter_box .filter_column_wrapper .filter_column li a.selected {
+  color: #000;
+}
+
+.filter_box .filter_column_wrapper .filter_column li a.selected:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\F105";
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  left: -10px;
+  color: #000;
+}
+
+.filter_box .filter_column_wrapper .filter_column li a:hover {
+  color: #000;
+}
+
+.filter_box .filter_buttons {
+  text-align: left;
 }
 
