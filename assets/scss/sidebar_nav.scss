@@ -14,8 +14,6 @@
   background: #fff;
   overflow-y: scroll;
   .sidebar_nav_content {
-    height: 100vh;
-    overflow-y: scroll;
     position: relative;
   }
   a {
@@ -42,3 +40,12 @@
   padding-left: 280px;
 }
 
+#info_plus {
+  cursor: pointer;
+}
+.sidebar_info_box {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
