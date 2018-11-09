@@ -25,14 +25,24 @@ header {
 			width: 100%;
 			height: 100%;
 			padding-top: 30px;
+			.hrc_middle_bottom {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+		    height: 100%;
+		    padding-bottom: 10px;
+			}
 			.hrc_middle {
 				display: flex;
-				align-self: center;
 				ul {
 					display: flex;
 					list-style-type: none;
 					margin: 0;
 					padding: 0;
+					li#shopping_bag {
+						text-align: center;
+						background: url('../images/static/bag.svg') no-repeat center center;
+					}
 					li {
 						padding: 10px;
 						display: flex;
@@ -84,10 +94,15 @@ header {
 			}
 			.hrc_bottom{
 				display: flex;
-				align-self: flex-end;
 				span {
 					display: inline-block;
-					padding: 0 10px;
+					padding: 0 6px;
+					&.active {
+						font-weight: bold;
+					}
+				}
+				#filter_button {
+					cursor: pointer;
 				}
 			}
 		}
