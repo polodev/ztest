@@ -1,0 +1,44 @@
+.hs1 {
+
+}
+.hs2 {
+
+}
+
+#sidebar_nav {
+  top: 115px;
+  position: fixed;
+  width: 280px;
+  padding: 0 28px;
+  padding-left: 80px;
+  background: #fff;
+  overflow-y: scroll;
+  .sidebar_nav_content {
+    height: 100vh;
+    overflow-y: scroll;
+    position: relative;
+  }
+  a {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    padding: 7px 0;
+    a {
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+  }
+}
+
+.main_content {
+  padding-left: 280px;
+}
+

@@ -40,6 +40,11 @@ body {
   outline: none;
 }
 
+.w80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
 header {
   height: 115px;
   position: fixed;
@@ -200,6 +205,48 @@ header .header_right .header_right_content .hrc_bottom span.active {
 
 header .header_right .header_right_content .hrc_bottom #filter_button {
   cursor: pointer;
+}
+
+#sidebar_nav {
+  top: 115px;
+  position: fixed;
+  width: 280px;
+  padding: 0 28px;
+  padding-left: 80px;
+  background: #fff;
+  overflow-y: scroll;
+}
+
+#sidebar_nav .sidebar_nav_content {
+  height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+}
+
+#sidebar_nav a {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+#sidebar_nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar_nav li {
+  padding: 7px 0;
+}
+
+#sidebar_nav li a {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.main_content {
+  padding-left: 280px;
 }
 
 .filter_box {
