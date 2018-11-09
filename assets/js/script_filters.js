@@ -1,7 +1,7 @@
 $('#serach_button_icon').on('click', function () {
   $('.input_box').toggleClass('active')
 })
-$details = {
+var details = {
   heading: 'DETAILS',
   filters:
     [
@@ -13,7 +13,7 @@ $details = {
   ]
 }
 
-$collections = {
+var collections = {
   heading: 'Collections',
   filters: [
     {name: "BIKER", id: 21 },
@@ -23,7 +23,7 @@ $collections = {
     {name: "HOOD", id: 25 },
   ]
 }
-$color = {
+var colors = {
   heading: 'Colors',
   filters: [
     {name: "BIKER", id: 31 },
@@ -33,7 +33,7 @@ $color = {
     {name: "HOOD", id: 35 },
   ]
 }
-$size = {
+var sizes = {
   heading: 'Size',
   filters:
     [
@@ -44,7 +44,7 @@ $size = {
     {name: "S", id: 45 },
   ]
 }
-$price = {
+var prices = {
   heading: 'Price',
   filters:
     [

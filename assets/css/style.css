@@ -175,3 +175,51 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
   cursor: pointer;
 }
 
+.filter_box {
+  position: fixed;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  top: 115px;
+  padding-top: 20px;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 2;
+}
+
+.filter_box .filter_box_inner {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.filter_box .filter_column_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filter_box .filter_column_wrapper .filter_column {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.filter_box .filter_column_wrapper .filter_column h4 {
+  color: #000;
+  font-size: .75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.filter_box .filter_column_wrapper .filter_column li {
+  list-style-type: none;
+}
+
+.filter_box .filter_column_wrapper .filter_column li a {
+  color: #999;
+  font-size: .75rem;
+}
+

@@ -1,0 +1,45 @@
+.filter_box {
+  position: fixed;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  top: 115px;
+  padding-top: 20px;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 2;
+  .filter_box_inner {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .filter_column_wrapper {
+    display: flex;
+    justify-content: center;
+    .filter_column {
+      text-align: left;
+      padding: 0 20px;
+      h4 {
+        color: #000;
+        font-size: .75rem;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        list-style-type: none;
+        a {
+          color: #999;
+          font-size: .75rem;
+        }
+      }
+    }
+  }
+  .filter_buttons {
+    .filter_buttons_bottom_left {
+
+    }
+    .filter_buttons_bottom_right {
+
+    }
+  }
+}
