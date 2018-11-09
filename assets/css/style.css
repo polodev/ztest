@@ -87,7 +87,8 @@ header .header_right .header_right_content .hrc_middle ul {
 
 header .header_right .header_right_content .hrc_middle ul li#shopping_bag {
   text-align: center;
-  background: url(/images/bag.svg?8d3129d0211103b6bda4d66875407456) no-repeat center center;
+  background: url(/images/bag3.png?b0f9b2e2157111cdc56e4b6b94403d59) no-repeat center top;
+  background-size: contain;
 }
 
 header .header_right .header_right_content .hrc_middle ul li {
@@ -101,6 +102,10 @@ header .header_right .header_right_content .hrc_middle ul li a {
   display: inline-block;
   text-decoration: none;
   color: black;
+}
+
+header .header_right .header_right_content .hrc_middle ul li a:hover {
+  font-weight: bold;
 }
 
 header .header_right .header_right_content .hrc_middle ul li .input_box_wrapper {
@@ -125,7 +130,9 @@ header .header_right .header_right_content .hrc_middle ul li .input_box_wrapper 
 }
 
 header .header_right .header_right_content .hrc_middle ul li .input_box_wrapper .input_box.active {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header .header_right .header_right_content .hrc_middle ul li .input_box_wrapper .input_box input {

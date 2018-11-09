@@ -41,7 +41,8 @@ header {
 					padding: 0;
 					li#shopping_bag {
 						text-align: center;
-						background: url('../images/static/bag.svg') no-repeat center center;
+						background: url('../images/static/bag3.png') no-repeat center top;
+						background-size: contain;
 					}
 					li {
 						padding: 10px;
@@ -50,6 +51,9 @@ header {
 							display: inline-block;
 							text-decoration: none;
 							color: black;
+							&:hover {
+								font-weight: bold;
+							}
 						}
 						.input_box_wrapper {
 							position: relative;
@@ -67,7 +71,7 @@ header {
 								padding: 5px;
 								display: none;
 								&.active {
-									display: block;
+									display: flex;
 								}
 								input {
 									width: 300px;
