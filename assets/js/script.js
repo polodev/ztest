@@ -9,24 +9,25 @@ $('#info_plus').on('click', function () {
   $('.sidebar_info_box').toggleClass('active');
 });
 
-$sidebar_nav_content = $('.sidebar_nav_content');
 $(window).scroll(function (event) {
     var st = $(window).scrollTop();
-    var headerH = 115;
-    var $svc = $('.sidebar_nav_content');
-    var wh = $(window).height();
+    var viewable_height = 400;
+    var windowHeight = $(window).height();
     var main_content_height = $('.main_content').height();
-    console.log('main_content_height', main_content_height);
-    var svch = $svc.height();
-    console.log('wh', wh)
-    console.log('svch', svch)
-    var total_svc_height = svch - (wh  + headerH);
-    console.log('total_svc_height', total_svc_height)
+    var $svc = $('.sidebar_nav_content')
+    var sidebar_nav_content_height = $svc.height();
+    var stableHeight = sidebar_nav_content_height - viewable_height;
+    console.log('stableHeight', stableHeight)
+    console.log('sidebar_nav_content_height', sidebar_nav_content_height)
+    console.log('windowHeight', windowHeight)
     console.log('st', st);
-    if (st < total_svc_height ) {
+    console.log('footer offset', $('footer').offset())
+    if (st < stableHeight  ) {
       $svc.css('top', -st);
-    }
-    if (st > main_content_height) {
+    } else if (st > main_content_height) {
       $svc.css('top', -st);
+    } else if (st < main_content_height) {
+      $svc.css('top', -stableHeight);
     }
+
 });
