@@ -792,6 +792,16 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .four .mcard {
+    height: 450px;
+  }
+
+  .four .mcard img {
+    max-height: 350px;
+  }
+}
+
 .four .mcard figcaption {
   text-align: center;
 }

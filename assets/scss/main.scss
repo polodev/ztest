@@ -37,6 +37,15 @@
       }
     }
 
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      height: 450px;
+      img {
+        max-height: 350px;
+      }
+    }
+
 
     figcaption {
       text-align: center;
