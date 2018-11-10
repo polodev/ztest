@@ -88,3 +88,52 @@ footer {
     }
   }
 }
+
+.footer__bottom__last {
+  padding: 3em 0;
+  a {
+    display: inline-block;
+    color: #222;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      font-size: 1em;
+      color: #333;
+      font-weight: normal;
+    }
+    &__left{
+      a {
+        position: relative;
+        padding-right: 10px;
+        font-weight: bold;
+        &:after {
+          content: "/";
+          position: absolute;
+          right: 0;
+        }
+        &:last-child {
+          &:after {
+            content: '';
+          }
+        }
+      }
+    }
+    &__right {
+      .social {
+        color: #666;
+        font-size: .9rem;
+      }
+    }
+  }
+}
+
+
+

@@ -1014,3 +1014,55 @@ footer {
   text-decoration: underline;
 }
 
+.footer__bottom__last {
+  padding: 3em 0;
+}
+
+.footer__bottom__last a {
+  display: inline-block;
+  color: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer__bottom__last a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.footer__bottom__last__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__bottom__last__content h3 {
+  font-size: 1em;
+  color: #333;
+  font-weight: normal;
+}
+
+.footer__bottom__last__content__left a {
+  position: relative;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.footer__bottom__last__content__left a:after {
+  content: "/";
+  position: absolute;
+  right: 0;
+}
+
+.footer__bottom__last__content__left a:last-child:after {
+  content: '';
+}
+
+.footer__bottom__last__content__right .social {
+  color: #666;
+  font-size: .9rem;
+}
+
