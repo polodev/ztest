@@ -77,6 +77,23 @@ var stickySidebar = new StickySidebar('#sidebar_nav', {
 
 
 
+/**
+ * changed view
+ */
+
+$('.view_number').on('click', function () {
+  var $this = $(this);
+  $('.view_number').removeClass('active');
+  $this.addClass('active')
+  var $n = $this.data('number');
+  var $mc = $('.main__content');
+  if ($n == 4) {
+    $mc.addClass('four');
+  }else {
+    $mc.removeClass('four');
+  }
+
+})
 
 
 

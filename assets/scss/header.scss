@@ -106,6 +106,10 @@ header {
           &.active {
             font-weight: bold;
           }
+          &.view_number {
+            display: inline-block;
+            cursor: pointer;
+          }
         }
         #filter_button {
           cursor: pointer;

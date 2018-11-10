@@ -641,6 +641,11 @@ header .header_right .header_right_content .hrc_bottom span.active {
   font-weight: bold;
 }
 
+header .header_right .header_right_content .hrc_bottom span.view_number {
+  display: inline-block;
+  cursor: pointer;
+}
+
 header .header_right .header_right_content .hrc_bottom #filter_button {
   cursor: pointer;
 }
