@@ -446,10 +446,6 @@ button {
   cursor: pointer;
 }
 
-#main {
-  padding-top: 115px;
-}
-
 .d-inline-block {
   display: inline-block;
 }
@@ -484,6 +480,7 @@ button {
 header {
   height: 115px;
   position: fixed;
+  z-index: 4;
   top: 0;
   left: 0;
   right: 0;
@@ -643,18 +640,18 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
   cursor: pointer;
 }
 
+.hs3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
 #sidebar_nav {
-  top: 115px;
-  position: fixed;
-  width: 280px;
-  padding: 0 28px;
-  padding-left: 80px;
-  background: #fff;
-  overflow-y: scroll;
+  min-width: 300px;
+  overflow: scroll;
 }
 
 #sidebar_nav .sidebar_nav_content {
-  position: relative;
+  padding: 20px;
 }
 
 #sidebar_nav a {
@@ -679,10 +676,6 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
   font-size: 13px;
 }
 
-.main_content {
-  padding-left: 280px;
-}
-
 #info_plus {
   cursor: pointer;
 }
@@ -693,6 +686,15 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
 
 .sidebar_info_box.active {
   display: block;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-top: 115px;
+  padding: 115px 30px 30px 30px;
 }
 
 .filter_box {
@@ -803,6 +805,6 @@ footer {
   background: red;
   color: white;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 

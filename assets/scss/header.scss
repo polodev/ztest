@@ -1,6 +1,7 @@
 header {
   height: 115px;
   position: fixed;
+  z-index: $z_header;
   top: 0;
   left: 0;
   right: 0;

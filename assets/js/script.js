@@ -1,24 +1,39 @@
+/*
+showing and hiding search box
+ */
 $('#serach_button_icon').on('click', function () {
   $('.input_box').toggleClass('active')
 })
 
+/**
+ * showing and hiding filter box in category page
+ */
+
 $('#filter_button, .ok_filter, .cancel_filter').on('click', function () {
   $('.filter_box').toggleClass('active');
 })
+
+/**
+ * showing and hiding info_plus in category page sidebar
+ */
+
 $('#info_plus').on('click', function () {
   $('.sidebar_info_box').toggleClass('active');
 });
 
 
-var lastScrollTop = 0;
+/**
+ * scroll sidebar accordance scrolling
+ */
 
+/*
+var lastScrollTop = 0;
 var windowHeight = $(window).height();
 var viewable_height = windowHeight/2;
 var main_content_height = $('.main_content').height();
 var $svc = $('.sidebar_nav_content')
 var sidebar_nav_content_height = $svc.height();
 var stableHeight = sidebar_nav_content_height - viewable_height;
-
 $(window).scroll(function (event) {
   var sto = $(this).scrollTop();
   var st = $(window).scrollTop();
@@ -43,5 +58,28 @@ $(window).scroll(function (event) {
 
    }
    lastScrollTop = sto;
-
 });
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

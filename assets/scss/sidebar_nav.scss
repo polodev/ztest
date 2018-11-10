@@ -4,17 +4,33 @@
 .hs2 {
 
 }
+.hs3 {
+  font-size: 18px;
+  font-weight: normal;
+}
 
 #sidebar_nav {
-  top: 115px;
-  position: fixed;
-  width: 280px;
-  padding: 0 28px;
-  padding-left: 80px;
-  background: #fff;
-  overflow-y: scroll;
+  // top: 115px;
+  // width: 350px;
+  // padding: 0 28px 0 20px;
+  // padding-left: 80px;
+  // background: #fff;
+  // overflow-y: scroll;
+
+  // top: 115px;
+  // width: 350px;
+  // padding: 0 28px 0 20px;
+  // padding-left: 80px;
+  // background: #fff;
+  // overflow-y: scroll;
+  // text-align: left;
+  // display: flex;
+  // justify-content: flex-end;
+  min-width: 300px;
+  overflow: scroll;
+
   .sidebar_nav_content {
-    position: relative;
+    padding: 20px;
   }
   a {
     font-size: inherit;
@@ -36,9 +52,6 @@
   }
 }
 
-.main_content {
-  padding-left: 280px;
-}
 
 #info_plus {
   cursor: pointer;
