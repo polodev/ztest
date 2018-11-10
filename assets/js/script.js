@@ -63,6 +63,18 @@ $(window).scroll(function (event) {
 
 
 
+/**
+ * [Its saved my day - it took me about 3h of work but nothing seems work. This plugin helped me]
+ * @type {StickySidebar}
+ */
+var stickySidebar = new StickySidebar('#sidebar_nav', {
+    topSpacing: 115,
+    bottomSpacing: 20,
+    leftSpacing: 20,
+    containerSelector: '.main',
+    innerWrapperSelector: '.sidebar_nav_content'
+});
+
 
 
 

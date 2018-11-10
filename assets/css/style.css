@@ -446,6 +446,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+}
+
 .d-inline-block {
   display: inline-block;
 }
@@ -646,7 +650,7 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
 }
 
 #sidebar_nav {
-  min-width: 300px;
+  min-width: 250px;
   overflow: scroll;
 }
 
@@ -688,13 +692,38 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
   display: block;
 }
 
-#main {
+.main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding-top: 115px;
   padding: 115px 30px 30px 30px;
+}
+
+.main__content__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 300px) {
+  .main__content__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mcard figure figcaption {
+  padding-top: 20px;
+}
+
+.mcard figure figcaption p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.mcard figure figcaption p.bold {
+  font-weight: bold;
 }
 
 .filter_box {
