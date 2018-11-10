@@ -905,9 +905,63 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
 }
 
 footer {
-  background: red;
-  color: white;
   position: relative;
   z-index: 3;
+  padding: 1.75rem;
+}
+
+.footer__top {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.footer__top h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer__top__input {
+  padding-top: 1em;
+}
+
+.footer__top input {
+  border: none;
+  outline: none;
+  color: #333;
+  font-size: 1.2em;
+  background: transparent;
+  border-bottom: 1px solid #222;
+  width: 300px;
+  padding: 5px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.footer__top .social_links {
+  padding-top: 5em;
+}
+
+.footer__top ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 2em;
+}
+
+.footer__top ul li {
+  display: inline-block;
+  padding: 1em;
+}
+
+.footer__top ul li a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer__top ul li a:hover {
+  color: #000;
 }
 
