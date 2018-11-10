@@ -765,6 +765,11 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
       flex-shrink: 0;
 }
 
+.mcard a {
+  text-decoration: none;
+  color: black;
+}
+
 .mcard.double {
   -webkit-box-flex: 100%;
       -ms-flex: 100%;
