@@ -51,5 +51,40 @@ footer {
   }
 }
 .footer__bottom {
+  padding: 3rem 2rem;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  &__content {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    &__item {
+      padding: 10px 20px;
+      text-align: left;
+      h2 {
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          padding: 5px 0;
+          a {
+            text-decoration: none;
+            color: #333;
+            font-size: .9rem;
+            &:hover {
+              color: #000;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
 
+    }
+  }
 }
