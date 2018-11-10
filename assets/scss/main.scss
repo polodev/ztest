@@ -14,9 +14,13 @@
     &__inner {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      @media screen and (max-width: 300px) {
-        grid-template-columns: 1fr;
-      }
+     .mcard.double {
+       grid-column: span 2;
+     }
+     &.four {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
     }
   }
 }

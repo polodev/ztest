@@ -706,10 +706,12 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
   grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (max-width: 300px) {
-  .main__content__inner {
-    grid-template-columns: 1fr;
-  }
+.main__content__inner .mcard.double {
+  grid-column: span 2;
+}
+
+.main__content__inner.four {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .mcard figure figcaption {
