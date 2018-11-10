@@ -19,7 +19,30 @@
   }
 }
 
+.four {
+  .mcard {
+    transition: all 1s;
+    flex: 25%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 400px;
+    &.double {
+      flex: 50%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      img {
+        max-height: 300px;
+      }
+      figcaption {
+        text-align: center;
+      }
+    }
+  }
+}
+
 .mcard {
+  position: relative;
+  transition: all 1s;
   flex: 50%;
   flex-grow: 0;
   flex-shrink: 0;

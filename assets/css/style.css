@@ -713,7 +713,43 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
           justify-content: center;
 }
 
+.four .mcard {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 400px;
+}
+
+.four .mcard.double {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.four .mcard.double img {
+  max-height: 300px;
+}
+
+.four .mcard.double figcaption {
+  text-align: center;
+}
+
 .mcard {
+  position: relative;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
