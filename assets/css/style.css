@@ -775,7 +775,25 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 400px;
+  height: 450px;
+}
+
+.four .mcard img {
+  max-height: 350px;
+}
+
+@media screen and (max-width: 2200px) and (min-width: 1400px) {
+  .four .mcard {
+    height: 600px;
+  }
+
+  .four .mcard img {
+    max-height: 500px;
+  }
+}
+
+.four .mcard figcaption {
+  text-align: center;
 }
 
 .four .mcard.double {
@@ -787,14 +805,6 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-
-.four .mcard.double img {
-  max-height: 300px;
-}
-
-.four .mcard.double figcaption {
-  text-align: center;
 }
 
 .mcard {
