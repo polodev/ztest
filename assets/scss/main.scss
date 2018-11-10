@@ -12,23 +12,29 @@
   padding: 115px 30px 30px 30px;
   &__content {
     &__inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-     .mcard.double {
-       grid-column: span 2;
-     }
-     &.four {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }
 
 .mcard {
+  flex: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  &.double {
+    flex: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+  &__content {
+  }
  figure {
+  text-align: center;
   figcaption {
     padding-top: 20px;
+    text-align: left;
     p {
       padding: 0;
       margin: 0;

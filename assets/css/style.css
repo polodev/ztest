@@ -448,6 +448,7 @@ button {
 
 img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .d-inline-block {
@@ -702,20 +703,45 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
 }
 
 .main__content__inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.main__content__inner .mcard.double {
-  grid-column: span 2;
+.mcard {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
-.main__content__inner.four {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+.mcard.double {
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.mcard figure {
+  text-align: center;
 }
 
 .mcard figure figcaption {
   padding-top: 20px;
+  text-align: left;
 }
 
 .mcard figure figcaption p {
