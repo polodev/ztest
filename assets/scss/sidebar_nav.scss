@@ -7,6 +7,13 @@
 .hs3 {
   font-size: 18px;
   font-weight: normal;
+  position: relative;
+  .small_sup {
+    position: absolute;
+    font-size: 9px;
+    top: 3px;
+    padding-left: 4px;
+  }
 }
 
 #sidebar_nav {
@@ -32,6 +39,10 @@
   .sidebar_nav_content {
     padding: 20px;
   }
+  small {
+    font-size: 9px;
+    font-weight: normal;
+  }
   a {
     font-size: inherit;
     font-weight: inherit;
@@ -45,9 +56,19 @@
   }
   li {
     padding: 2px 0;
+    position: relative;
     a {
       text-transform: uppercase;
       font-size: 13px;
+      &.special {
+        color: $special_color;
+      }
+      .small_sup {
+        position: absolute;
+        font-size: 9px;
+        top: 3px;
+        padding-left: 4px;
+      }
     }
   }
 }

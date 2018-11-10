@@ -23,7 +23,6 @@ img {
   display: inline;
 }
 .btn1 {
-  cursor: pointer;
   -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
   box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -39,6 +38,35 @@ img {
     outline: none;
   }
 }
+
+.btn2 {
+  background-color: #fff;
+  border: 1px solid #000;
+  margin-top: 10px;
+  color: #000;
+  height: 35px;
+  padding: 0 17px;
+  letter-spacing: .05em;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+.hs1 {
+
+}
+.hs2 {
+
+}
+.hs3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
 
 .w80 {
   width: 80%;

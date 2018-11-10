@@ -460,7 +460,6 @@ img {
 }
 
 .btn1 {
-  cursor: pointer;
   -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background-color: transparent;
@@ -475,6 +474,28 @@ img {
 
 .btn1:focus {
   outline: none;
+}
+
+.btn2 {
+  background-color: #fff;
+  border: 1px solid #000;
+  margin-top: 10px;
+  color: #000;
+  height: 35px;
+  padding: 0 17px;
+  letter-spacing: .05em;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn2:focus {
+  outline: none;
+}
+
+.hs3 {
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .w80 {
@@ -653,6 +674,14 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
 .hs3 {
   font-size: 18px;
   font-weight: normal;
+  position: relative;
+}
+
+.hs3 .small_sup {
+  position: absolute;
+  font-size: 9px;
+  top: 3px;
+  padding-left: 4px;
 }
 
 #sidebar_nav {
@@ -662,6 +691,11 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
 
 #sidebar_nav .sidebar_nav_content {
   padding: 20px;
+}
+
+#sidebar_nav small {
+  font-size: 9px;
+  font-weight: normal;
 }
 
 #sidebar_nav a {
@@ -679,11 +713,23 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
 
 #sidebar_nav li {
   padding: 2px 0;
+  position: relative;
 }
 
 #sidebar_nav li a {
   text-transform: uppercase;
   font-size: 13px;
+}
+
+#sidebar_nav li a.special {
+  color: #f53993;
+}
+
+#sidebar_nav li a .small_sup {
+  position: absolute;
+  font-size: 9px;
+  top: 3px;
+  padding-left: 4px;
 }
 
 #info_plus {
