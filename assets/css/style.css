@@ -686,7 +686,6 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
 
 #sidebar_nav {
   min-width: 250px;
-  overflow: scroll;
 }
 
 #sidebar_nav .sidebar_nav_content {
