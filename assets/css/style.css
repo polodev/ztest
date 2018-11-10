@@ -774,30 +774,30 @@ header .header_right .header_right_content .hrc_bottom #filter_button {
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 450px;
+  height: 350px;
 }
 
 .four .mcard img {
-  max-height: 350px;
+  max-height: 250px;
 }
 
 @media screen and (max-width: 2200px) and (min-width: 1400px) {
+  .four .mcard {
+    height: 500px;
+  }
+
+  .four .mcard img {
+    max-height: 400px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 2000px) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (max-width: 2000px) and (min-width: 1200px) {
   .four .mcard {
     height: 600px;
   }
 
   .four .mcard img {
     max-height: 500px;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .four .mcard {
-    height: 450px;
-  }
-
-  .four .mcard img {
-    max-height: 350px;
   }
 }
 
